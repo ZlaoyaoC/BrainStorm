@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-29</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        ul {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%) rotateZ(-45deg);
+        }
+
+        ul li {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px 0 300px 0;
+            background-color: pink;
+            opacity: .6;
+            position: absolute;
+            transform-origin: left bottom;
+            transition: all 2s;
+        }
+
+        ul:hover li:nth-child(1){
+            transform: rotateZ(-65deg);
+        }
+        ul:hover li:nth-child(2){
+            transform: rotateZ(-45deg);
+        }
+        ul:hover li:nth-child(3){
+            transform: rotateZ(-25deg);
+        }
+        ul:hover li:nth-child(5){
+            transform: rotateZ(25deg);
+        }
+        ul:hover li:nth-child(6){
+            transform: rotateZ(45deg);
+        }
+        ul:hover li:nth-child(7){
+            transform: rotateZ(65deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
