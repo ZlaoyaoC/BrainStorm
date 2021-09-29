@@ -1,4 +1,4 @@
 # test
-This is a testingggggggggggggggggg repository.
+This is a testing repository.
 hello github!!!
 woaini niaiwo
