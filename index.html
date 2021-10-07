@@ -22,25 +22,50 @@
         }
 
         body {
-            background-color: #140f1d;
+            background-color: #e4ebf5;
+            padding: 40px;
+            user-select: none;
         }
 
         ul {
-            padding: 20px;
+            padding: 20px 10px 10px 20px;
+            border: 10px dashed #9baacf;
+            border-radius: 6px;
+            overflow: hidden;
         }
 
         ul li {
             height: 50px;
-            font-size: 20px;
-            background-color: #ffd22d;
-            border-radius: 6px;
+            font-size: 16px;
+            background-color: #e4ebf5;
+            border-radius: 12px;
             line-height: 50px;
-            padding: 0 10px;
+            padding: 0 20px;
+            box-shadow: 0.3rem 0.3rem 0.6rem lightgray, -0.2rem -0.2rem 0.5rem white;
             margin-right: 10px;
             margin-bottom: 10px;
             float: left;
+            cursor: pointer;
+        }
+
+        ul li a {
+            color: #9baacf;
+            transition: all .8s;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        ul li:hover a {
+            color: #6d5dfc;
+        }
+
+        ul li:active {
+            box-shadow: 0.3rem 0.3rem 0.6rem lightgray inset, -0.2rem -0.2rem 0.5rem white inset;
         }
     </style>
+    <script src="./js/data.js"></script>
+
 </head>
 
 <body>
@@ -48,9 +73,6 @@
         <!-- 生成 -->
     </ul>
 </body>
-
-
-<script src="./js/data.js"></script>
 <script>
     var _ul = null;
     var newLi = null;
