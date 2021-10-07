@@ -45,15 +45,31 @@
 
 <body>
     <ul>
-        <li><a href="./仓库/跟随鼠标动/1.html">跟随鼠标动</a></li>
-        <li> <a href="./仓库/滑动视差/hdsc.html">滑动视差</a></li>
-        <li> <a href="./仓库/横向滚动/实现鼠标滚轮横向滚动.html">横向滚动</a></li>
-        <li> <a href="./仓库/搜索框2/ssk.html">搜索框2</a></li>
-        <li> <a href="./仓库/Css键盘/jianpan.html">Css键盘</a></li>
-        <li> <a href="./仓库/3D切口名片/3D切口名片.html">3D切口名片</a></li>
-        <li> <a href="./仓库/360°全景图/qjt.html">360°全景图</a></li>
-        <li> <a href="./仓库/9-29作业/黄志超.html">9-29黄志超作业</a></li>
+        <!-- 生成 -->
     </ul>
 </body>
+
+
+<script src="./js/data.js"></script>
+<script>
+    var _ul = null;
+    var newLi = null;
+    var newA = null;
+
+    dataJson.forEach(function (item, index) {
+
+        _ul = document.querySelector("ul");
+        newLi = document.createElement("li");
+        newA = document.createElement("a");
+        newA.innerHTML = item.btnName;
+        newA.href = `./${item.root}/${item.path}/${item.fileName}`;
+
+        newLi.appendChild(newA);
+        _ul.appendChild(newLi);
+
+    });
+
+
+</script>
 
 </html>
