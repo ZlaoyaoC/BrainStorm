@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  background-color: #fafafc;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 -1em 1.2em 0 black;
+  position: fixed;
+  top: 0px;
+  padding-top: 0.1em;
+  padding-bottom: 0.5em;
+  transition: all 1s;
+  z-index: 20;
+}
+header .search {
+  width: 20em;
+  height: 2em;
+  margin-top: 0.5em;
+  position: relative;
+}
+header .search input {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  outline: 0;
+  border: 0;
+  text-indent: 3em;
+  color: #666666;
+}
+header .search::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  left: 1em;
+  background: url(../仿携程网移动端页面素材/images/home-common.png) no-repeat top left / 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+}
+header .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .home i {
+  display: block;
+  background: url(../仿携程网移动端页面素材/images/home-common.png) no-repeat center -2.5em / 1.5em;
+  width: 1.6em;
+  height: 1.6em;
+}
+header .home P {
+  color: #fff;
+}
+main {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+main .banner {
+  height: 224.24px;
+}
+main .banner div {
+  margin-left: 0px;
+  width: 600%;
+  height: 224.24px;
+  transform: translateX(-23.45em);
+}
+main .banner img {
+  float: left;
+  width: 16.66%;
+}
+main .banner ul {
+  position: absolute;
+  top: 10.5em;
+  right: 0.5em;
+  padding-bottom: 0.5em;
+}
+main .banner ul li {
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #fff;
+  opacity: 0.7;
+  float: left;
+  margin-right: 0.5em;
+  border-radius: 1em;
+}
+main .banner ul li.active {
+  width: 1.5em;
+  opacity: 1;
+}
+main .fiveMain {
+  width: 94%;
+  height: 4.5em;
+  background-color: #fff;
+  border-radius: 0.5em;
+  position: absolute;
+  top: 11.5em;
+  margin-left: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .fiveMain div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .fiveMain div i {
+  display: block;
+  width: 2.625em;
+  height: 2.75em;
+}
+main .fiveMain div p {
+  font-size: 0.5em;
+}
+main .fiveMain .one i {
+  background: url(../仿携程网移动端页面素材/images/home-fivemain.png) no-repeat -0.5em -0.5em/3.625em;
+}
+main .fiveMain .two i {
+  background: url(../仿携程网移动端页面素材/images/home-fivemain.png) no-repeat -0.5em -4.1em/3.625em;
+}
+main .fiveMain .three i {
+  background: url(../仿携程网移动端页面素材/images/home-fivemain.png) no-repeat -0.5em -7.7em/3.625em;
+}
+main .fiveMain .four i {
+  background: url(../仿携程网移动端页面素材/images/home-fivemain.png) no-repeat -0.5em -11.5em/3.625em;
+}
+main .fiveMain .five i {
+  background: url(../仿携程网移动端页面素材/images/home-fivemain.png) no-repeat -0.5em -15em/3.625em;
+}
+main nav {
+  margin: 0 auto;
+  margin-top: 2.5em;
+  width: 94%;
+  height: 12.25em;
+  background-color: #fff;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
+}
+main nav p {
+  width: 23%;
+  height: 32.9%;
+  background-color: #4ea3ed;
+  text-align: center;
+  line-height: 8em;
+  color: #fff;
+  font-size: 0.5em;
+}
+main nav p:nth-child(4n - 3) {
+  width: 30%;
+  text-align: left;
+  text-indent: 2em;
+}
+main nav p:nth-child(-n + 4) {
+  background-color: #fa6b54;
+}
+main nav p:nth-child(n + 9) {
+  background-color: #4dca85;
+}
+main nav P:nth-child(1) {
+  background: #fa6b54 url(../仿携程网移动端页面素材/images/grid-nav-items-hotel.png) no-repeat bottom right / 10.5em;
+}
+main nav P:nth-child(2) {
+  background: #fa6b54 url(../仿携程网移动端页面素材/images/grid-nav-items-minsu.png) no-repeat bottom left / 5.5em;
+}
+main nav P:nth-child(4) {
+  background: #fa6b54 url(../仿携程网移动端页面素材/images/grid-nav-items-jhj.png) no-repeat bottom right / 9em;
+}
+main nav P:nth-child(5) {
+  background: #4ea3ed url(../仿携程网移动端页面素材/images/grid-nav-items-flight.png) no-repeat bottom right / 10em;
+}
+main nav P:nth-child(6) {
+  background: #4ea3ed url(../仿携程网移动端页面素材/images/grid-nav-items-train.png) no-repeat bottom left / 5em;
+}
+main nav P:nth-child(9) {
+  background: #4dca85 url(../仿携程网移动端页面素材/images/grid-nav-items-travel.png) no-repeat bottom right / 10em;
+}
+main nav P:nth-child(10) {
+  background: #4dca85 url(../仿携程网移动端页面素材/images/grid-nav-items-dingzhi.png) no-repeat bottom left / 5em;
+}
+main .subnav {
+  width: 94%;
+  height: 7em;
+  margin: 0.6em auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .subnav div {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .subnav div p {
+  font-size: 0.5em;
+}
+main .subnav div i {
+  width: 2.25em;
+  height: 2.625em;
+}
+main .subnav div:nth-child(1) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em 0em / 2.6em;
+}
+main .subnav div:nth-child(2) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -2.6em / 2.6em;
+}
+main .subnav div:nth-child(3) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -5.2em / 2.6em;
+}
+main .subnav div:nth-child(4) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -7.7em / 2.6em;
+}
+main .subnav div:nth-child(5) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -10.4em / 2.6em;
+}
+main .subnav div:nth-child(6) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -12.9em / 2.6em;
+}
+main .subnav div:nth-child(7) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -15.5em / 2.6em;
+}
+main .subnav div:nth-child(8) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -18.1em / 2.6em;
+}
+main .subnav div:nth-child(9) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -20.7em / 2.6em;
+}
+main .subnav div:nth-child(10) i {
+  background: url(../仿携程网移动端页面素材/images/un_ico_subnav.png) no-repeat -0.2em -23.3em / 2.6em;
+}
+main .tmh {
+  background-color: #fff;
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 0.6em;
+}
+main .tmh .tmh_top {
+  width: 94%;
+  margin: 0 auto;
+}
+main .tmh .tmh_top i {
+  float: left;
+  background: url(../仿携程网移动端页面素材/images/un_home_text.png) no-repeat 0 0 / 6em;
+  width: 4.5em;
+  height: 1.25em;
+  margin-top: 0.5em;
+}
+main .tmh .tmh_top span {
+  float: right;
+  padding: 0.2em 0.6em;
+  margin-top: 0.5em;
+  border-radius: 3em;
+  background-color: #ff5c91;
+  color: #fff;
+  text-align: center;
+}
+main .tmh .tmh_main {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+main .tmh .tmh_main .l {
+  width: 49.5%;
+  float: left;
+  background-color: #f9f9f9;
+}
+main .tmh .tmh_main .l img {
+  width: 100%;
+  height: 8.5em;
+}
+main .tmh .tmh_main .l p {
+  padding: 1em 0.5em 0;
+}
+main .tmh .tmh_main .l p:nth-of-type(1) {
+  font-size: 0.9rem;
+  color: #333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+main .tmh .tmh_main .l p:nth-of-type(2) {
+  color: #ff495e;
+  padding-bottom: 0.6em;
+}
+main .tmh .tmh_main .l p:nth-of-type(2) span {
+  font-size: 1.2rem;
+}
+main .tmh .tmh_main .r_top {
+  float: right;
+  width: 49.5%;
+  box-sizing: border-box;
+  padding: 2em 0.5em;
+  margin-bottom: 0.3em;
+  font-size: 0.9rem;
+  background: #f9f9f9 url(../仿携程网移动端页面素材/images/pic-tmh-02.png) no-repeat center right / 4em;
+}
+main .tmh .tmh_main .r_top p:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #fd3a51;
+  padding-bottom: 0.2em;
+}
+main .tmh .tmh_main .r_bottom_l,
+main .tmh .tmh_main .r_bottom_r {
+  float: right;
+  width: 24%;
+  background-color: #f9f9f9;
+  padding: 1.2em 0 4.2em;
+}
+main .tmh .tmh_main .r_bottom_l p,
+main .tmh .tmh_main .r_bottom_r p {
+  text-align: center;
+}
+main .tmh .tmh_main .r_bottom_l {
+  background: #f9f9f9 url(../仿携程网移动端页面素材/images/pic-tmh-03.png) no-repeat center bottom / 4em;
+  margin-right: 0.3em;
+}
+main .tmh .tmh_main .r_bottom_l p:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #77affe;
+  padding-bottom: 0.2em;
+}
+main .tmh .tmh_main .r_bottom_r {
+  background: #f9f9f9 url(../仿携程网移动端页面素材/images/pic-tmh-04.png) no-repeat center bottom / 4em;
+}
+main .tmh .tmh_main .r_bottom_r p:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #53ca72;
+  padding-bottom: 0.2em;
+}
+main .huodong {
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  margin-top: 0.5em;
+  background-color: #f2f2f2;
+}
+main .huodong .huodong_top {
+  margin: 0 auto;
+  padding: 0 0.5em 1em 0.5em;
+  background-color: #fff;
+}
+main .huodong .huodong_top i {
+  float: left;
+  background: url(../仿携程网移动端页面素材/images/un_home_text.png) no-repeat 0 -1.5em / 6em;
+  width: 7em;
+  height: 1.25em;
+  margin-top: 0.5em;
+  position: relative;
+}
+main .huodong .huodong_top i img {
+  width: 2.5em;
+  position: absolute;
+  top: 0;
+  right: -2em;
+}
+main .huodong .huodong_top span {
+  float: right;
+  padding: 0.2em 0.6em;
+  margin-top: 0.5em;
+  border-radius: 3em;
+  background-color: #ff5c91;
+  color: #fff;
+  text-align: center;
+}
+main .huodong .huodong_main {
+  margin-top: 0.1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+main .huodong .huodong_main a {
+  width: 49.9%;
+}
+main .huodong .huodong_main a img {
+  width: 100%;
+}
+footer {
+  margin-top: 0.5em;
+  margin-bottom: 2.5em;
+}
+footer .footer_top {
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer_top div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .footer_top div:nth-child(3) {
+  padding: 0 0.8em;
+}
+footer .footer_top i {
+  font-size: 1.5rem;
+  color: #9e9e9e;
+}
+footer .footer_top p {
+  margin-top: 0.5em;
+}
+footer .footer_bottom {
+  text-align: center;
+}
+footer .footer_bottom p {
+  margin-top: 1em;
+  font-size: 0.5rem;
+}
+footer .footer_bottom p:nth-of-type(2) {
+  color: #99a5c1;
+}
+footer .footer_bottom .icon-diqiu {
+  font-size: 0.5rem;
+}
+footer .footer_bottom .icon-xiangxiajiantou {
+  font-size: 0.3rem;
+}
+footer .footer_bottom .icon-copyright {
+  font-size: 0.5rem;
+}
